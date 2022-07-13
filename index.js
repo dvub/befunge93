@@ -1,3 +1,5 @@
+// user input is a little different with node so i wont do that yet...
+
 // my simple befunge93 interpreter
 // this is not meant to be a full-fledged interpreter - although i might make it so later...
 
@@ -8,7 +10,6 @@
 // https://replit.com/@nnari/befunge93?v=1
 // credit to nari for giving me some hints along the way - thank you!
 
-// DOES NOT WORK ON QUINE NOR SIEVE
 const code = '01->1# +# :# 0# g# ,# :# 5# 8# *# 4# +# -# _@';
 
 console.log(code);
@@ -109,6 +110,9 @@ const OPS = {
         const [y, x] = popPair();
         STACK.push(arr[y][x].charCodeAt(0)); // initially this didnt work because i forgot charcodeat lmao
     },
+    '&': () => {
+        console.read
+    }
 
 };
 
